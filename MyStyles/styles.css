@@ -1,15 +1,12 @@
+/*Style General*/
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 100%;
-
-}
-
-#container{
-
+    background-color:black;
 }
 #cabecera{
     width: 100%;
-    max-height: 300px;
+    height: 250px;
     position: relative;
     text-align: center;
 }
@@ -24,31 +21,217 @@ body{
     text-align: center;
     transform: translateX(-20%) translateY(-55%);
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 #cabecera .imgperfil{
     position: absolute;
-    width: 20%;
-    height: 80%;
-    padding-left: 60px;
-    padding-top: 3%;
+    padding-left: 30px;
+    padding-top: 2%;
+    border-color: #534666;
 }
 nav{
-    background: green;
+    background: #2c6975 ;
     width: 100%;
     height: 50px;
+    padding-top: 10px;
 }
 nav ul li {
-    float: left;
+    float: right;
     list-style: none;
-    margin: 0px;
+    margin-right: 20px;
+    margin-top: 5px;
+    line-height: 5px;
+    position:static;
+
+}
+nav a {
+    color: white;   
+}
+nav a:hover {
+    color: #68b2a0;
+    background-color: white;
+    width: 100%;
 }
 
+/*Style Home*/
+#main-seccion{
+    background-color: #DC8665;
+    padding: 20px;
+    height: 700px;
+    text-align: center;
+}
+section article{
+    padding-top: 50px;
+}
+section h2{
+    color: white;
+}
+
+#pfrase{
+    text-align: center;
+    color: #534666;
+}
+
+/*Style About */
+#section-about{
+    float: left;
+    background-color: #DC8665;
+    width: 60%;
+    height: 100%;
+} 
+.clearfix{
+    clear:both;
+
+} 
+#about-art1{
+    background-color: burlywood;
+    padding: 20px;
+    padding-left: 30px;
+    
+}
+#about-art1 h2{
+    color:white;
+}
+#about-art2{
+    align-items: center;
+    padding: 20px;
+}
+
+#about-art2 h2{
+    color: #534666;
+    background-color: antiquewhite;
+    text-align: center;
+}
+/*Imagenes de Articulo*/
+.Container-Img{
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+
+    width: 100%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;   
+}
+.Caja-Img{
+    background-color: white;
+    box-shadow: 0 4px 8px #534666;
+    margin: 10px;
+}
+.Text-Img{
+    padding-left: 10px;
+    font-size: 70%;
+}
+.Item-Img{
+    max-width: 100%;
+    display: block;
+}
+/*Aside-About*/
+
+#aside-about{
+    float: right;
+    background-color: #534666;
+    width: 40%;
+    height: 100%;
+    align-content: center;
+}
+aside h2 {
+    color: white;
+}
+aside li {
+    font-style: italic;
+}
+#aside-artic1{
+    padding: 30px;
+}
+#aside-artic2{
+    padding: 30px;
+    background-color: #2c6975;
+}
+#aside-artic3{
+    padding: 30px;
+}
+.Container-Img2{
+    display: grid;
+    grid-template-columns: repeat(1, 50%);
+
+    width: 100%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;   
+}
+.Container-Img3{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+
+    width: 100%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;   
+}
+
+/*Style Contact*/
+
+#seccion-contact{
+    float: left;
+    background-color: #DC8665;
+    width: 60%;
+    height: 1300px;  
+}
+#article-contact{
+    margin: 30px;
+}
+.Container-Img4{
+    display: grid;
+    grid-template-columns: repeat(1, 70%);
+
+    width: 70%;
+    margin: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;   
+    color: white;
+}
+.Caja-Img4{
+    background-color: #534666;
+    box-shadow: 0 4px 8px #534666;
+    margin: 10px;
+}
+.Container-Img5{
+    display: grid;
+    grid-template-columns: repeat(1, 90%);
+
+    width: 90%;
+    margin: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;   
+    color: white;
+}
+.Caja-Img5{
+    background-color: #DC8665;
+    box-shadow: 0 4px 8px #DC8665;
+    margin: 10px;
+}
+
+#Aside-Contact{
+    float: right;
+    background-color: #534666;
+    width: 40%;
+    height: 1300px;
+    align-content: center;
+}
+#artic-Aside{
+    padding: 20px;
+}
+
+#artic-Aside a{
+    color: beige;
+}
 footer{
+
     height: 20%;
     color: white;
     text-align: center;
     background: black;
     padding-top: 10px;
     line-height: 30px;
+    padding-bottom: 10px;
 }
