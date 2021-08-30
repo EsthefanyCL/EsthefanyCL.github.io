@@ -5,8 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Webside</title>
-    <link rel="stylesheet" href="MyStyles/estilopersonal.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/28b0acf733.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="myStyles/estilopersonal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pacifico&family=Satisfy&display=swap" rel="stylesheet">
 </head>
 <body>
     <header id="cabecera" >
@@ -17,72 +21,128 @@
             <p><strong>Ingeniera de Sistemas</strong></p>
         </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="Contact.html">CONTACT </a></li>
-            <li><a href="About.html">ABOUT</a></li>
-            <li><a href="index.html">HOME</a></li>
-        </ul>
+<!-- Navegador-->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> 
+                <img src="imagenes/Meowfy.png" alt="Logo Marca Personal" width="80"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportContent" aria-controls="navbarSupportContent" aria-expanded="false"
+                    aria-label="Toogle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportContent">
+                <ul class="navbar-nav "> 
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="contact.html">CONTACT </a></li>
+                </ul>
+            </div>
+        </div> 
     </nav>
-    <section id="seccion-contact">
-    <article id="article-contact">
-        <ul>
-            <h3>Mis redes sociales</h3>
-            <li>Instagram: Blog Personal <a href="https://www.instagram.com/thefa_cl1/?hl=es-la" target="_blank" >thefa_cl1</a></li>
-            <div class="Container-Img4">
-                <div class="Caja-Img4">
-                    <img src="Imagenes/Instagram.PNG" alt="" title="" class="Item-Img"> 
-                    <div class="Text-Img">
-                        <h4>Página Instagram</h4>
-                    </div>
-                </div>
-            </div>
-            <li>Facebook: <a href="https://www.facebook.com/esthefany.chugnas" target="_blank">Esthefany Chugnas L</a></li>
-            <div class="Container-Img4">
-                <div class="Caja-Img4">
-                    <img src="Imagenes/Facebook.PNG" alt="" title="" class="Item-Img"> 
-                    <div class="Text-Img">
-                        <h4>Página Facebook</h4>
-                    </div>
-                </div>
-            </div>
-            <li>Pinterest: <a href="https://www.pinterest.com/ThefaCL/_saved/" target="_blank">Esthefany Chugnas L</a></li>
-            <div class="Container-Img4">
-                <div class="Caja-Img4">
-                    <img src="Imagenes/Pinterest.PNG" alt="" title="" class="Item-Img"> 
-                    <div class="Text-Img">
-                        <h4>Página Pinteres</h4>
-                    </div>
-                </div>
-            </div>
-        </ul>
-        
-    </article>
-    </section>
-    <aside id="Aside-Contact">
-        <article id="artic-Aside">
-            <h2> Cajamarca - Peru</h2>
-            <ul> 
-                <h3>Contacto</h3>
-                <li>Linkedin: <a href="https://www.linkedin.com/in/esthefany-trinidad-chugnas-lucano-096407118/" target="_blank">EsthefanyChugnasLucano-Linkedin</a></li>
-                <div class="Container-Img5">
-                    <div class="Caja-Img5">
-                        <img src="Imagenes/Linkedin.PNG" alt="" title="" class="Item-Img"> 
-                        <div class="Text-Img">
-                            <h4>Página Linkedin</h4>
+    <!-- Barra Social Fija-->
+    <div class="b-social">
+        <div class="btn-group-vertical" role="group">
+        <a href="https://www.linkedin.com/in/esthefany-trinidad-chugnas-lucano-096407118/" target="_blank" class="btn btn-outline-dark btn-md" role="button" aria-pressed="true"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:echugnasl17_1@unc.edu.pe" target="_blank" class="btn btn-outline-dark " role="button" aria-pressed="true"><i class="fas fa-envelope btn-md"></i></a>
+        <a href="" target="_blank" class="btn btn-outline-dark " role="button" aria-pressed="true"><i class="fab fa-github btn-md"></i></a>
+        <a href="https://www.facebook.com/esthefany.chugnas" target="_blank" class="btn btn-outline-dark btn-md" role="button" aria-pressed="true"><i class="fab fa-facebook " ></i></a>
+        <a href="https://www.instagram.com/thefa_cl1/?hl=es-la" target="_blank" class="btn btn-outline-dark btn-md" role="button" aria-pressed="true"><i class="fab fa-instagram w-10px" ></i></a>
+        <a href="https://www.pinterest.com/ThefaCL/_saved/" target="_blank" class="btn btn-outline-dark btn-md" role="button" aria-pressed="true"><i class="fab fa-pinterest-square"></i></a>
+        </div>
+    </div>
+    <!--Contenido principal-->
+    <div class="container-fluid first">
+        <div class="row">
+            <!--Seccion-->
+            <div  id="contseccion" class="col-lg-8">
+                <article id="article-contact">
+                    <ul> <h3>Mis redes sociales</h3>
+                        <li>Instagram: Blog Personal <a href="https://www.instagram.com/thefa_cl1/?hl=es-la" target="_blank" >thefa_cl1</a></li>
+                        <div class="Container-Img4">
+                            <div class="Caja-Img4">
+                                <img src="Imagenes/Instagram.PNG" alt="" title="" class="Item-Img"> 
+                                <div class="Text-Img">
+                                <h4>Página Instagram</h4>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <li>Email: <a href="mailto:echugnasl17_1@unc.edu.pe"> echugnasl17_1@unc.edu.pe</a> </li>
-                <li>Celular: 921597916</li>
-            </ul>
-        </article>
-        
-    </aside>
+                        <li>Facebook: <a href="https://www.facebook.com/esthefany.chugnas" target="_blank">Esthefany Chugnas L</a></li>
+                        <div class="Container-Img4">
+                            <div class="Caja-Img4">
+                                <img src="Imagenes/Facebook.PNG" alt="" title="" class="Item-Img"> 
+                                <div class="Text-Img">
+                                <h4>Página Facebook</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <li>Pinterest: <a href="https://www.pinterest.com/ThefaCL/_saved/" target="_blank">Esthefany Chugnas L</a></li>
+                        <div class="Container-Img4">
+                            <div class="Caja-Img4">
+                                <img src="Imagenes/Pinterest.PNG" alt="" title="" class="Item-Img"> 
+                                <div class="Text-Img">
+                                <h4>Página Pinteres</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    
+                </article>
+            </div>
+            <!--Aside-->
+            <div id="contAside" class="col-lg-4">
+                <article id="artic-Aside">
+                    <h2> Cajamarca - Peru</h2>
+                    <ul> 
+                        <h3>Contacto</h3>
+                        <li>Linkedin: <a href="https://www.linkedin.com/in/esthefany-trinidad-chugnas-lucano-096407118/" target="_blank">EsthefanyChugnasLucano-Linkedin</a></li>
+                        <div class="Container-Img5">
+                            <div class="Caja-Img5">
+                                <img src="Imagenes/Linkedin.PNG" alt="" title="" class="Item-Img"> 
+                                <div class="Text-Img">
+                                    <h4>Página Linkedin</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <li>Email: <a href="mailto:echugnasl17_1@unc.edu.pe"> echugnasl17_1@unc.edu.pe</a> </li>
+                        <li>Celular: 921597916</li>
+                    </ul>
+                    <form id="from">
+                        <h3>En que te puedo ayudar o dejame tu comentario</h3>
+                        <div class="form-group">
+                          <label for="exampleFormControlInput1">Email</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlSelect1">Califica la Pagina Web</label>
+                          <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlTextarea1">Deja un mensaje</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-outline-info">Enviar</button>
+                        <br>
+                        <input class="form-control" type="text" <i class="fas fa-map-marker-alt">Tartar Grande S/N</i>placeholder="" readonly>
+                       
+                    </form>
+
+                </article>
+            </div>
+        </div>
+    </div>
     <div class="clearfix">  </div>  
     <footer>
         <p>  © 2021 Mi sitio web | By Esthefany Chugnas Lucano</p>
         <p>  Bienvenido, pronto conoceras más cobre mi </p>
+        <a href=""> <i class="fas fa-map-marker-alt"> Tartar Grande S/N</i></a>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>
 </html>

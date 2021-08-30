@@ -1,6 +1,6 @@
 /*Style General*/
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Satisfy', cursive;
     font-size: 100%;
     background-color:black;
 }
@@ -21,7 +21,12 @@ body{
     text-align: center;
     transform: translateX(-20%) translateY(-55%);
     color: white;
-
+}
+#cabecera h1 {
+    font-family: 'Pacifico', cursive;
+}
+#cabecera p{
+    font-size: 20px;
 }
 #cabecera .imgperfil{
     position: absolute;
@@ -29,6 +34,7 @@ body{
     padding-top: 2%;
     border-color: #534666;
 }
+/*
 nav{
     background: #2c6975 ;
     width: 100%;
@@ -51,6 +57,14 @@ nav a:hover {
     color: #68b2a0;
     background-color: white;
     width: 100%;
+}
+*/
+/*Barra social media*/
+.b-social{
+    position: fixed;
+    right: 0;
+    top:380px;
+    z-index: 2000;
 }
 
 /*Style Home*/
@@ -89,6 +103,11 @@ section h2{
     padding-left: 30px;
     
 }
+#Carrusel-Img{
+    width: 50%;
+    height: 50%;
+}
+
 #about-art1 h2{
     color:white;
 }
@@ -102,6 +121,8 @@ section h2{
     background-color: antiquewhite;
     text-align: center;
 }
+
+
 /*Imagenes de Articulo*/
 .Container-Img{
     display: grid;
@@ -126,7 +147,12 @@ section h2{
     display: block;
 }
 /*Aside-About*/
-
+#contseccion{
+   background-color: #DC8665; 
+}
+#contAside{
+    background-color: #534666;
+}
 #aside-about{
     float: right;
     background-color: #534666;
@@ -140,6 +166,7 @@ aside h2 {
 aside li {
     font-style: italic;
 }
+
 #aside-artic1{
     padding: 30px;
 }
@@ -170,20 +197,12 @@ aside li {
 }
 
 /*Style Contact*/
-
-#seccion-contact{
-    float: left;
-    background-color: #DC8665;
-    width: 60%;
-    height: 1300px;  
-}
 #article-contact{
-    margin: 30px;
+    background-color: #DC8665;
 }
 .Container-Img4{
     display: grid;
     grid-template-columns: repeat(1, 70%);
-
     width: 70%;
     margin: 10px;
     margin-top: 5px;
@@ -211,22 +230,23 @@ aside li {
     margin: 10px;
 }
 
-#Aside-Contact{
-    float: right;
-    background-color: #534666;
-    width: 40%;
-    height: 1300px;
-    align-content: center;
-}
 #artic-Aside{
     padding: 20px;
+    background-color: #534666;
+    color: white;
+    align-content: center;
 }
 
 #artic-Aside a{
     color: beige;
 }
+
+#from h3{
+    text-align: center;
+}
 footer{
 
+    position: static;
     height: 20%;
     color: white;
     text-align: center;
