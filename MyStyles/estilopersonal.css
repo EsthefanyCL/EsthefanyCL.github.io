@@ -204,11 +204,9 @@ aside li {
     color: white;
     align-content: center;
 }
-
 #artic-Aside a{
     color: beige;
 }
-
 #from h3{
     text-align: center;
 }
@@ -222,4 +220,26 @@ footer{
     padding-top: 10px;
     line-height: 30px;
     padding-bottom: 10px;
+}
+
+/*Style de pagina Laboratorio 05*/
+
+#seccionLab{
+    background-color:rgb(165, 211, 212);
+    height: 700px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+    padding: 20px;
+}
+#formLab{
+    padding: 40px;
+
+}
+#seccionLab #labelA{
+    color: white;
+    background-color: rgb(26, 26, 184);
+}
+#seccionLab #labelB{
+    color: white;
+    background-color: rgb(235, 21, 21);
 }
