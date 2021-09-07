@@ -235,16 +235,18 @@ footer{
 }
 #formLab{
     padding: 40px;
-
 }
-#seccionLab #labelA{
+.cazul{
     color: white;
-    background-color: rgb(26, 26, 184);
+    background-color: rgba(25, 25, 209, 0.945);
 }
-#seccionLab #labelB{
+.crojo{
     color: white;
     background-color: rgb(235, 21, 21);
 }
-#color{
-    
+.cazul.rojo{
+    background-color: rgb(235, 21, 21);
+}
+.crojo.azul{
+    background-color: rgba(25, 25, 209, 0.945);
 }
